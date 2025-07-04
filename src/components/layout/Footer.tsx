@@ -11,19 +11,26 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {/* Brand */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Your Name</h3>
+            <h3 className="text-xl font-bold mb-4">Manil Gajjar</h3>
             <p className="text-muted-foreground mb-4">
-              Full Stack Developer passionate about creating beautiful and functional web experiences.
+              Full-Stack Developer passionate about creating innovative solutions and beautiful user experiences. 
+              Finance graduate turned developer based in London, UK.
             </p>
             <div className="flex space-x-2">
-              <Button variant="ghost" size="icon">
-                <Github className="h-5 w-5" />
+              <Button variant="ghost" size="icon" asChild>
+                <a href="https://github.com/puymieyches" target="_blank" rel="noopener noreferrer">
+                  <Github className="h-5 w-5" />
+                </a>
               </Button>
-              <Button variant="ghost" size="icon">
-                <Linkedin className="h-5 w-5" />
+              <Button variant="ghost" size="icon" asChild>
+                <a href="https://linkedin.com/in/manilgajjar" target="_blank" rel="noopener noreferrer">
+                  <Linkedin className="h-5 w-5" />
+                </a>
               </Button>
-              <Button variant="ghost" size="icon">
-                <Mail className="h-5 w-5" />
+              <Button variant="ghost" size="icon" asChild>
+                <a href="mailto:manilgajjar@gmail.com">
+                  <Mail className="h-5 w-5" />
+                </a>
               </Button>
             </div>
           </div>
@@ -39,21 +46,21 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Services */}
+          {/* Skills */}
           <div>
-            <h4 className="font-semibold mb-4">Services</h4>
+            <h4 className="font-semibold mb-4">Core Technologies</h4>
             <ul className="space-y-2 text-muted-foreground">
-              <li>Web Development</li>
-              <li>Frontend Development</li>
-              <li>Backend Development</li>
-              <li>UI/UX Design</li>
+              <li>JavaScript/TypeScript</li>
+              <li>Vue/Nuxt3 & React</li>
+              <li>Node.js & Python</li>
+              <li>PostgreSQL & MongoDB</li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-border mt-8 pt-8 text-center text-muted-foreground">
           <p className="flex items-center justify-center gap-2">
-            © {currentYear} Your Name. Made with <Heart className="h-4 w-4 text-red-500" /> using React & Tailwind CSS
+            © {currentYear} Manil Gajjar. Made with <Heart className="h-4 w-4 text-red-500" /> using React & Tailwind CSS
           </p>
         </div>
       </div>

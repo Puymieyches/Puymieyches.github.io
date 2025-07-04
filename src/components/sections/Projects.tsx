@@ -7,51 +7,51 @@ import { Github, ExternalLink } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with React, Node.js, and Stripe integration. Features include user authentication, product management, and real-time inventory tracking.",
-      tech: ["React", "Node.js", "PostgreSQL", "Stripe", "Tailwind CSS"],
-      github: "https://github.com/yourusername/ecommerce",
-      demo: "https://your-ecommerce-demo.com",
+      title: "Trackmania Discord Bot",
+      description: "A Discord bot built with Cloudflare Workers that connects to the Nadeo API to fetch and display custom club campaign stats, including reset timers and short map updates.",
+      tech: ["Cloudflare Workers", "Cloudflare KV", "Discord API", "Nadeo API", "JavaScript"],
+      github: "https://github.com/puymieyches",
+      demo: "#",
       image: "/placeholder.svg"
     },
     {
-      title: "Task Management App",
-      description: "A collaborative project management tool with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      tech: ["Vue.js", "Firebase", "Vuetify", "Socket.io"],
-      github: "https://github.com/yourusername/taskmanager",
-      demo: "https://your-taskmanager-demo.com",
+      title: "Full-Stack Web Application",
+      description: "Complete web application built during FreeCodeCamp certification with user authentication, database integration, and responsive design.",
+      tech: ["React", "Node.js", "Express", "PostgreSQL", "JWT", "CSS3"],
+      github: "https://github.com/puymieyches",
+      demo: "#",
       image: "/placeholder.svg"
     },
     {
-      title: "Weather Dashboard",
-      description: "A responsive weather application with location-based forecasts, interactive maps, and weather alerts using modern APIs.",
-      tech: ["TypeScript", "React", "OpenWeather API", "Chart.js"],
-      github: "https://github.com/yourusername/weather",
-      demo: "https://your-weather-demo.com",
+      title: "JavaScript Calculator",
+      description: "Interactive calculator application built with vanilla JavaScript featuring a clean UI and full mathematical operations support.",
+      tech: ["JavaScript", "HTML5", "CSS3", "Responsive Design"],
+      github: "https://github.com/puymieyches",
+      demo: "#",
       image: "/placeholder.svg"
     },
     {
-      title: "Social Media Dashboard",
-      description: "An analytics dashboard for social media management with data visualization, scheduling, and performance tracking.",
-      tech: ["Next.js", "Python", "FastAPI", "Recharts", "Redis"],
-      github: "https://github.com/yourusername/social-dashboard",
-      demo: "https://your-social-demo.com",
+      title: "Markdown Previewer",
+      description: "Real-time markdown preview application that converts markdown syntax to HTML with live preview functionality.",
+      tech: ["React", "Markdown", "CSS3", "HTML5"],
+      github: "https://github.com/puymieyches",
+      demo: "#",
       image: "/placeholder.svg"
     },
     {
-      title: "Learning Management System",
-      description: "An educational platform with course management, progress tracking, and interactive learning modules.",
-      tech: ["React", "Express", "MongoDB", "Socket.io", "AWS S3"],
-      github: "https://github.com/yourusername/lms",
-      demo: "https://your-lms-demo.com",
+      title: "Data Visualization Dashboard",
+      description: "Interactive data visualization project using Chart.js and D3.js to display complex datasets with multiple chart types and filtering options.",
+      tech: ["Chart.js", "D3.js", "JavaScript", "Python", "Pandas"],
+      github: "https://github.com/puymieyches",
+      demo: "#",
       image: "/placeholder.svg"
     },
     {
-      title: "Portfolio Website",
-      description: "A modern, responsive portfolio website built with React and Tailwind CSS, featuring smooth animations and dark mode support.",
-      tech: ["React", "Tailwind CSS", "Framer Motion", "Vite"],
-      github: "https://github.com/yourusername/portfolio",
-      demo: "https://your-portfolio-demo.com",
+      title: "Nuxt3 Business Application",
+      description: "Modern business application built with Nuxt3 and TypeScript, featuring authentication, API integration with Airtable, and deployment on AWS.",
+      tech: ["Nuxt3", "Vue", "TypeScript", "Airtable", "AWS AppRunner", "PostgreSQL"],
+      github: "https://github.com/puymieyches",
+      demo: "#",
       image: "/placeholder.svg"
     }
   ];
@@ -91,13 +91,17 @@ const Projects = () => {
                 </div>
 
                 <div className="flex gap-3">
-                  <Button variant="outline" size="sm" className="flex-1">
-                    <Github className="mr-2 h-4 w-4" />
-                    Code
+                  <Button variant="outline" size="sm" className="flex-1" asChild>
+                    <a href={project.github} target="_blank" rel="noopener noreferrer">
+                      <Github className="mr-2 h-4 w-4" />
+                      Code
+                    </a>
                   </Button>
-                  <Button size="sm" className="flex-1">
-                    <ExternalLink className="mr-2 h-4 w-4" />
-                    Demo
+                  <Button size="sm" className="flex-1" asChild>
+                    <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="mr-2 h-4 w-4" />
+                      Demo
+                    </a>
                   </Button>
                 </div>
               </CardContent>

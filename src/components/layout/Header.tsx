@@ -48,7 +48,7 @@ const Header = () => {
   return (
     <header className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <div className="text-xl font-bold">Your Name</div>
+        <div className="text-xl font-bold">Manil Gajjar</div>
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-8">

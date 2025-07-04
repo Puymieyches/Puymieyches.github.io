@@ -15,13 +15,14 @@ const Hero = () => {
       <div className="container mx-auto px-4 text-center">
         <div className="animate-fade-in">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-            Your Name
+            Manil Gajjar
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Full Stack Developer & UI/UX Designer
+            Full-Stack Developer
           </p>
           <p className="text-lg text-muted-foreground mb-12 max-w-3xl mx-auto">
-            I create beautiful, functional, and user-friendly digital experiences that make a difference.
+            Finance graduate turned developer with hands-on experience in modern technologies, 
+            driven by curiosity and passion for problem-solving. Currently based in London, UK.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -43,14 +44,20 @@ const Hero = () => {
           </div>
 
           <div className="flex justify-center space-x-6 mb-12">
-            <Button variant="ghost" size="icon" className="h-12 w-12">
-              <Github className="h-6 w-6" />
+            <Button variant="ghost" size="icon" className="h-12 w-12" asChild>
+              <a href="https://github.com/puymieyches" target="_blank" rel="noopener noreferrer">
+                <Github className="h-6 w-6" />
+              </a>
             </Button>
-            <Button variant="ghost" size="icon" className="h-12 w-12">
-              <Linkedin className="h-6 w-6" />
+            <Button variant="ghost" size="icon" className="h-12 w-12" asChild>
+              <a href="https://linkedin.com/in/manilgajjar" target="_blank" rel="noopener noreferrer">
+                <Linkedin className="h-6 w-6" />
+              </a>
             </Button>
-            <Button variant="ghost" size="icon" className="h-12 w-12">
-              <Mail className="h-6 w-6" />
+            <Button variant="ghost" size="icon" className="h-12 w-12" asChild>
+              <a href="mailto:manilgajjar@gmail.com">
+                <Mail className="h-6 w-6" />
+              </a>
             </Button>
           </div>
 
