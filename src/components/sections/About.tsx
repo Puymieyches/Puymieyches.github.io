@@ -32,7 +32,7 @@ const About = () => {
 
         <div className="grid lg:grid-cols-3 gap-12 max-w-7xl mx-auto">
           {/* Profile Section */}
-          <div className="lg:col-span-1">
+          <div className="lg:col-span-1 space-y-8">
             <Card className="text-center">
               <CardHeader>
                 <div className="mx-auto mb-6">
@@ -49,16 +49,33 @@ const About = () => {
                 <div className="space-y-4">
                   <div className="flex items-center justify-center gap-2 text-muted-foreground">
                     <MapPin className="w-4 h-4" />
-                    <span>London, UK → Spain</span>
+                    <span>London, UK → Open for relocation</span>
                   </div>
                   <div className="flex items-center justify-center gap-2 text-muted-foreground">
                     <Calendar className="w-4 h-4" />
-                    <span>Available for relocation</span>
+                    <span>Available immediately</span>
                   </div>
                   <Button className="w-full" size="lg">
                     <Download className="w-4 h-4 mr-2" />
                     Download Resume
                   </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Languages */}
+            <Card>
+              <CardHeader>
+                <CardTitle>Languages</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid grid-cols-1 gap-4">
+                  {languages.map((lang) => (
+                    <div key={lang.name} className="flex justify-between items-center">
+                      <div className="font-medium">{lang.name}</div>
+                      <div className="text-sm text-muted-foreground">{lang.level}</div>
+                    </div>
+                  ))}
                 </div>
               </CardContent>
             </Card>
@@ -83,16 +100,15 @@ const About = () => {
                     on both business needs and technical solutions.
                   </p>
                   <p>
-                    Currently based in London, UK, I'm actively seeking opportunities to relocate 
-                    permanently to Spain and build a career in the Spanish tech ecosystem. I bring 
-                    a strong foundation in full-stack development, from frontend frameworks like 
-                    Vue/Nuxt3 and React to backend technologies and cloud deployment.
+                    Currently based in London, UK, I'm open for relocation opportunities and ready to 
+                    contribute to innovative tech teams anywhere. I bring a strong foundation in 
+                    full-stack development, from frontend frameworks like Vue/Nuxt3 and React to 
+                    backend technologies and cloud deployment.
                   </p>
                   <p>
                     When I'm not coding, you'll find me exploring new technologies, contributing to 
-                    open-source projects, or planning my next adventure in Spain. I'm particularly 
-                    passionate about creating efficient, user-friendly applications that solve 
-                    real-world problems.
+                    open-source projects, or planning my next adventure. I'm particularly passionate 
+                    about creating efficient, user-friendly applications that solve real-world problems.
                   </p>
                 </div>
               </CardContent>
@@ -170,23 +186,6 @@ const About = () => {
                       ))}
                     </div>
                   </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Languages */}
-            <Card>
-              <CardHeader>
-                <CardTitle>Languages</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="grid grid-cols-3 gap-4">
-                  {languages.map((lang) => (
-                    <div key={lang.name} className="text-center">
-                      <div className="font-medium">{lang.name}</div>
-                      <div className="text-sm text-muted-foreground">{lang.level}</div>
-                    </div>
-                  ))}
                 </div>
               </CardContent>
             </Card>
