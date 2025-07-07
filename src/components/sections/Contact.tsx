@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -60,7 +59,7 @@ const Contact = () => {
     {
       icon: MapPin,
       label: "Location",
-      value: "London, UK (Relocating to Spain)",
+      value: "London, UK (Open for relocation)",
       href: "#"
     }
   ];
